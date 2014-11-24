@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Social</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            #gp-login {
+                display: inline-block;
+                background: #dd4b39;
+                color: white;
+                width: 165px;
+                border-radius: 5px;
+                white-space: nowrap;
+            }
+            #gp-login:hover {
+                background: #e74b37;
+                cursor: hand;
+            }
+            span.label {
+                font-weight: bold;
+            }
+            span.icon {
+                //background: url('/+/images/branding/btn_red_32.png') transparent 5px 50% no-repeat;
+                display: inline-block;
+                vertical-align: middle;
+                width: 35px;
+                height: 35px;
+                border-right: #bb3f30 1px solid;
+            }
+            span.buttonText {
+                display: inline-block;
+                vertical-align: middle;
+                padding-left: 35px;
+                padding-right: 35px;
+                font-size: 14px;
+                font-weight: bold;
+                /* Use the Roboto font that is loaded in the <head> */
+                font-family: 'Roboto',arial,sans-serif;
+            }
+        </style>
+        <!--        <script src="https://apis.google.com/js/client:platform.js?onload=render" async defer></script>-->
+    </head>
+    <body>
+        <!-- facebook  -->
+        <div id="fb-root"></div>
+        <!- login ->
+        <img src="./images/fb.jpeg" name="fb-login" id="fb-login" />
+        <!- logout ->
+        <button name="fb-logout" id="fb-logout">Logout</button>
+
+        <!-- facebook  -->
+        <!-- twitter -->
+
+        <!-- twitter -->
+        <!-- google plus -->
+
+        <div id="gSignInWrapper">
+            <!--            <span class="label">Sign in with:</span>-->
+            <div id="gp-login" class="customGPlusSignIn">
+                <span class="icon"></span>
+                <span class="buttonText">Google</span>
+            </div>
+        </div>
+
+        <div id="responseContainer"></div>
+        
+        <!-- google plus -->
+
+
+        <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/aes.js"></script>
+        <script src="./scripts/common.js"></script>
+        <script src="./scripts/social.js"></script>
+        <script src="./scripts/usage.js"></script>
+        <script>
+            console.log("checkLoginStatus - " + checkLoginStatus());
+        </script>
+    </body>
+</html>
